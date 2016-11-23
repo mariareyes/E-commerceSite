@@ -1,0 +1,38 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="Assignment2W2016.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="Ass2Style.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="theheader">
+            <div id="left">
+                <h1>MeepShop</h1>
+                <h2>Maria Eugenia Reyes Freaner</h2>
+                <h3>040769402</h3>
+                <h4>reye0048@algonquinlive.com</h4>
+                <a href="Cart.aspx">Cart.aspx</a><br />
+                <asp:Label ID="loginAl" runat="server"></asp:Label>
+            </div>
+        </div>
+        <br />
+        <br />
+        <div id="container">
+            <div id="menu">
+                <table id="tb" runat="server"></table>
+            </div>
+            <div id="container-inner">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+
+    </form>
+</body>
+</html>
